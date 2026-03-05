@@ -118,6 +118,7 @@ def register_tools(mcp: FastMCP) -> None:
                     "size_bytes": raw_size,
                 }
 
+            content = content_raw
             content_bytes = content.encode(encoding)
             if len(content_bytes) > max_size:
                 # Truncate by bytes to avoid splitting multibyte sequences (e.g. UTF-8 emojis)

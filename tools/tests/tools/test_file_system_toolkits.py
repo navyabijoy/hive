@@ -245,7 +245,7 @@ class TestViewFileTool:
         assert result["size_bytes"] == expected_bytes, (
             f"expected {expected_bytes} (utf-16), got {result['size_bytes']}"
         )
-        
+
     def test_offset_without_hashline_returns_error(
         self, view_file_fn, mock_workspace, mock_secure_path, tmp_path
     ):
